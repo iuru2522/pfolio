@@ -52,6 +52,24 @@ export const projectsData = [
       "Online parser project",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Springboot"],
     imageUrl: corpcommentImg,
+    
+  },
+  {
+    title: "TestProject",
+    description:
+      "Test project",
+    tags: ["Java", "Angular", "React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Springboot"],
+    imageUrl: corpcommentImg,
+    
+  },
+
+  {
+    title: "TestProject2",
+    description:
+      "Test project222",
+    tags: ["Java", "Angular", "React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Springboot"],
+    imageUrl: corpcommentImg,
+    
   },
 
 ] as const;
