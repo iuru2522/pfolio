@@ -41,7 +41,16 @@ export const experiencesData = [
       "Courses: Enterprise Java, Databases, SDLC, Web development, Cybersecurity, Networking",
     icon: React.createElement(LuGraduationCap),
     date: "2025",
+  },
+  {
+    title: "Software ",
+    location: "Toronto",
+    description:
+      "Courses: Enterprise Java, Databases, SDLC, Web development, Cybersecurity, Networking",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020",
   }
+ 
  
 ] as const;
 
