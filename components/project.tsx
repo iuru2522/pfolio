@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import SectionHeading from "./section-heading";
+// import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";

@@ -25,7 +25,7 @@ export default function Projects() {
   // }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
