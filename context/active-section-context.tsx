@@ -46,7 +46,7 @@ export function useActiveSectionContext() {
 
   if (context === null) {
     throw new Error(
-      "seActiveSectionContext must be used within an ActionSectionContextProvider"
+      "setActiveSectionContext must be used within an ActionSectionContextProvider"
     );
   }
 

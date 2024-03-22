@@ -35,7 +35,7 @@ export default function Contact() {
           className="underline text-gray-700 -mt-6"
           href="mailto:ternoboy@gmail.com"
         >
-          example@gmail.com
+          @gmail.com
         </a>{" "}
         or through this form
       </p>
