@@ -3,8 +3,19 @@ import React from "react";
 // import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import acmeImg from "@/public/acme.png";
+import utrackerImg from "@/public/utracker.png";
+import angularImg from "@/public/angular.png";
+import javaImg from "@/public/java.jpg";
+import zettelkastenImg from "@/public/zettelkasten.jpg";
+
+export const githubLink1 = "https://github.com/iuru2522/nextjs-dashboard-project";
+export const githubLink2 = "https://github.com/iuru2522/parsemarkdown";
+export const githubLink3 = "https://github.com/iuru2522/mern-one";
+export const githubLink4 = "https://github.com/iuru2522/zettelkasten";
+export const githubLink5 = "https://github.com/iuru2522/";
+
+
 
 export const links = [
   {
@@ -43,7 +54,7 @@ export const experiencesData = [
     date: "2025",
   },
   {
-    title: "Software ",
+    title: "Test ",
     location: "Toronto",
     description:
       "Courses: Enterprise Java, Databases, SDLC, Web development, Cybersecurity, Networking",
@@ -55,29 +66,51 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  
   {
-    title: "ParseComment",
+    title: "Acme Dashboard",
     description:
-      "Online parser project",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Springboot"],
-    imageUrl: corpcommentImg,
+      "Project is based on Nextjs Starter code. Found it useful to test myself how to add new features into the existing project.",
+    tags: [ "Typescript", "Next.js", "MongoDB", "Tailwind"],
+    imageUrl: acmeImg,
+    githubLink: githubLink1
     
   },
   {
-    title: "TestProject",
+    title: "ParseComment",
     description:
-      "Test project",
-    tags: ["Java", "Angular", "React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Springboot"],
-    imageUrl: corpcommentImg,
+      "My playground how to build parser using Java",
+    tags: ["Java", "Springboot"],
+    imageUrl: javaImg,
+    githubLink: githubLink2
     
   },
 
   {
-    title: "TestProject2",
+    title: "uTracker",
     description:
-      "Test project222",
-    tags: ["Java", "Angular", "React", "Next.js", "MongoDB", "Tailwind", "Prisma", "Springboot"],
-    imageUrl: corpcommentImg,
+      "Simple CRUD app using MERN stack.",
+    tags: [ "Javascript", "React", "Nodejs", "MongoDB"],
+    imageUrl: utrackerImg,
+    githubLink: githubLink3
+    
+  },
+  {
+    title: "Zettelkasten",
+    description:
+      "List of links I found interesting topics to read.",
+    tags: [ "Markdown", "Links", "Second Brain"],
+    imageUrl: zettelkastenImg,
+    githubLink: githubLink4
+    
+  },
+  {
+    title: "test-angular-app",
+    description:
+      "Future app using Typescript and Angular",
+    tags: [ "In progress", "Typescript", "Angular", "Nodejs", "MongoDB", "SSR"],
+    imageUrl: angularImg,
+    githubLink: githubLink5
     
   },
 
