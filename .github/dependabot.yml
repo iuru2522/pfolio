@@ -6,13 +6,11 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-    versioning-strategy: increase-if-necessary
-    allow:
-      - dependency-type: "direct"
-      - dependency-type: "indirect"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      interval: "daily"
+    groups:
+      all-updates:
+        applies-to: version-updates
+        patterns:
+          - "*"
