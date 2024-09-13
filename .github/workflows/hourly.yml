@@ -1,0 +1,15 @@
+name: Run Dependabot every hour
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Dependabot
+        run: |
+          docker run --rm \
+            -v ${GITHUB_WORKSPACE}/.github:/mnt \
+            dependabot/dependabot-core \
+            update --config /mnt/dependabot.yml
