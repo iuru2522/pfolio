@@ -10,6 +10,9 @@ const nextConfig = {
     },
     experimental: {
       serverActions: true,
+      serverComponentsExternalPackages: ['@react-email/render', '@react-email/tailwind']
+
+
     },
   };
   
