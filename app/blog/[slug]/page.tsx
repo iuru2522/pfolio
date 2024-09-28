@@ -1,3 +1,5 @@
+"use client";
+
 import { getBlogPost } from '@/components/blog';
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
@@ -13,4 +15,4 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </article>
   );
-}s
+}
