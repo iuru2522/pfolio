@@ -1,4 +1,5 @@
 "use client";
+export const runtime = 'edge'; 
 
 import { getBlogPost } from '@/components/blog';
 
