@@ -32,6 +32,7 @@
     "typescript": "5.7.2"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "wrangler": "^3.99.0"
   }
 }
