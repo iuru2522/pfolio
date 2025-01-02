@@ -15,5 +15,4 @@ updates:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
     versioning-strategy: "increase"
-    target-branch: "staging"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 20
