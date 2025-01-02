@@ -15,4 +15,4 @@ updates:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
     versioning-strategy: "increase"
-    open-pull-requests-limit: 20
+    open-pull-requests-limit: 10
