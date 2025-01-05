@@ -11,8 +11,5 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "all"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-    versioning-strategy: "increase"
+    versioning-strategy: "widen"
     open-pull-requests-limit: 10
