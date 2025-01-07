@@ -1,10 +1,13 @@
 "use client";
-export const runtime = 'edge'; 
+export const runtime = 'edge';
 
 import { getBlogPost } from '@/components/blog';
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = getBlogPost(params.slug);
+type Params = Promise<{ slug: string }>;
+
+export default async function BlogPost({ params }: { params: Params }) {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
 
   if (!post) {
     return <div>Blog post not found</div>;
