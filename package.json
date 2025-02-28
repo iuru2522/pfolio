@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-email/components": "^0.0.33",
     "@react-email/tailwind": "^1.0.4",
-    "@types/node": "22.13.5",
+    "@types/node": "22.13.9",
     "@types/react": "19.0.10",
     "@types/react-dom": "^19.0.2",
     "autoprefixer": "10.4.20",
@@ -30,7 +30,7 @@
     "resend": "^4.0.1",
     "sharp": "^0.33.5",
     "tailwindcss": "3.4.17",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6",
