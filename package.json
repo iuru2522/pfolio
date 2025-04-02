@@ -12,7 +12,7 @@
     "@react-email/components": "^0.0.35",
     "@react-email/tailwind": "^1.0.4",
     "@types/node": "22.13.16",
-    "@types/react": "19.0.12",
+    "@types/react": "19.1.0",
     "@types/react-dom": "^19.0.2",
     "autoprefixer": "10.4.21",
     "clsx": "^2.1.1",
