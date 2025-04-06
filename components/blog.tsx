@@ -77,7 +77,7 @@ let tuple: [string, number] = ["hello", 10];
             </ul>
             <h2>Example Tailwind Classes</h2>
             <pre><code>
-<div class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+<div class="bg-blue-500 text-white font-bold py-2 px-4 rounded-sm">
   Button
 </div>
             </code></pre>
