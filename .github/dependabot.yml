@@ -6,10 +6,12 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    allow:
-      - dependency-type: "all"
-    versioning-strategy: "widen"
-    open-pull-requests-limit: 10
+    groups:
+      all-updates:
+        applies-to: version-updates
+        patterns:
+          - "*"
+          
