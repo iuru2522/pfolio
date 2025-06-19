@@ -17,9 +17,9 @@
     "@types/react-dom": "^19.1.6",
     "clsx": "^2.1.1",
     "eslint": "9.29.0",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "15.3.4",
     "framer-motion": "^12.18.1",
-    "next": "^15.3.3",
+    "next": "^15.3.4",
     "postcss": "8.5.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "wrangler": "^4.20.0"
+    "wrangler": "^4.20.3"
   }
 }
