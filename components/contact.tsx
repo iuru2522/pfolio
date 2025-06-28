@@ -83,7 +83,9 @@ function ContactForm() {
         </span>
       </div>
 
-      <SubmitBtn />
+      <div className="flex justify-center">
+        <SubmitBtn />
+      </div>
     </motion.form>
   );
 }
