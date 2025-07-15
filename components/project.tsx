@@ -49,14 +49,26 @@ export default function Project({
               </li>
             ))}
           </ul>
-          <a
-            href={githubLink}
-            className="mt-4 text-blue-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View on GitHub
-          </a>
+          <div className="mt-4 flex gap-3">
+            <a
+              href={githubLink}
+              className="text-blue-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+            {title === "angular-firebase-playground" && (
+              <a
+                href="https://angular-firebase-playground.pages.dev/"
+                className="text-green-500 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
         </div>
 
         <Image

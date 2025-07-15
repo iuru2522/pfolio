@@ -13,7 +13,7 @@ export const githubLink1 = "https://github.com/iuru2522/nextjs-dashboard-project
 export const githubLink2 = "https://github.com/iuru2522/parsemarkdown";
 export const githubLink3 = "https://github.com/iuru2522/mern-one";
 export const githubLink4 = "https://github.com/iuru2522/zettelkasten";
-export const githubLink5 = "https://github.com/iuru2522/";
+export const githubLink5 = "https://github.com/iuru2522/angular-firebase-playground";
 
 
 
@@ -74,7 +74,7 @@ export const projectsData = [
   {
     title: "Acme Dashboard",
     description:
-      "Project is based on Nextjs Starter code. Found it useful to test myself how to add new features into the existing project.",
+      "Project is based on Nextjs Starter code.",
     tags: [ "Typescript", "Next.js", "MongoDB", "Tailwind"],
     imageUrl: acmeImg,
     githubLink: githubLink1
@@ -109,10 +109,10 @@ export const projectsData = [
     
   },
   {
-    title: "test-angular-app",
+    title: "angular-firebase-playground",
     description:
-      "Future app using Typescript and Angular",
-    tags: [ "In progress", "Typescript", "Angular", "Nodejs", "MongoDB", "SSR"],
+      "Bug tracking app",
+    tags: [ "In progress", "Typescript", "Angular 19", "Firebase", "SSR"],
     imageUrl: angularImg,
     githubLink: githubLink5
     
