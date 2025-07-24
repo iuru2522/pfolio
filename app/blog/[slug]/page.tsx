@@ -2,8 +2,8 @@ export const runtime = 'edge';
 
 import { getBlogPost } from '@/components/blog';
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default function BlogPost(props: any) {
+  const { slug } = props.params;
   const post = getBlogPost(slug);
 
   if (!post) {
