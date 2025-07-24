@@ -3,10 +3,8 @@ export const runtime = 'edge';
 
 import { getBlogPost } from '@/components/blog';
 
-type Params = Promise<{ slug: string }>;
-
-export default async function BlogPost({ params }: { params: Params }) {
-  const { slug } = await params;
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const post = getBlogPost(slug);
 
   if (!post) {
