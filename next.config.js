@@ -8,7 +8,11 @@ const nextConfig = {
         },
       ],
     },
-    serverExternalPackages: ['@react-email/render', '@react-email/tailwind']
+    serverExternalPackages: ['@react-email/render', '@react-email/tailwind'],
+    // Optimize for Cloudflare Pages
+    output: 'export',
+    trailingSlash: true,
+    distDir: '.next'
   };
   
   module.exports = nextConfig;

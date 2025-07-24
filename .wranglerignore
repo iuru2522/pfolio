@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Next.js build cache and large files
+.next/cache/
+cache/
+.next/standalone/
+.next/server/
+
+# Development files
+.git/
+.gitignore
+README.md
+*.log
+
+# Environment files
+.env*
+
+# IDE files
+.vscode/
+.cursor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Vercel files (except the output we need)
+.vercel/output/functions/
+.vercel/output/config.json

@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getBlogPost } from '@/components/blog';
 
 export default function BlogPost(props: any) {
