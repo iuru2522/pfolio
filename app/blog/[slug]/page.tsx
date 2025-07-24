@@ -1,5 +1,18 @@
 import { getBlogPost } from '@/components/blog';
 
+// Generate static params for all blog posts
+export function generateStaticParams() {
+  const blogPosts = [
+    { slug: 'getting-started-with-nextjs' },
+    { slug: 'mastering-typescript' },
+    { slug: 'power-of-tailwind-css' }
+  ];
+  
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default function BlogPost(props: any) {
   const { slug } = props.params;
   const post = getBlogPost(slug);
