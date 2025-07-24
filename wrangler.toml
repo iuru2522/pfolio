@@ -1,4 +1,4 @@
 name = "pfolio"
-compatibility_date = "2025-03-25"
+compatibility_date = "2025-05-05"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".next"
