@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-email/components": "^0.5.1",
     "@react-email/tailwind": "^1.0.4",
-    "@tailwindcss/postcss": "^4.1.12",
+    "@tailwindcss/postcss": "^4.1.13",
     "@types/node": "24.3.1",
     "@types/react": "19.1.12",
     "@types/react-dom": "^19.1.9",
@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "wrangler": "^4.33.2"
+    "wrangler": "^4.34.0"
   }
 }
