@@ -50,20 +50,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software development student",
-    location: "Oakville, ON, Canada",
+    title: "Full-stack developer coop",
+    location: "Mississauga, ON",
     description:
-      "Courses: Enterprise Java, Databases, SDLC, Web development, Cybersecurity, Networking",
+      "Technologies: C#, .NET, Bootstrap, Typescript, Nextjs, Azure",
     icon: React.createElement(LuGraduationCap),
-    date: "2025",
+    date: "2025 (4 month)",
   },
   {
-    title: "Test ",
-    location: "Toronto",
+    title: "Full-stack developer coop",
+    location: "Mississauga, ON",
     description:
-      "Courses: Enterprise Java, Databases, SDLC, Web development, Cybersecurity, Networking",
+      "Technologies: C#, .NET, Bootstrap, Typescript, Nextjs, Azure",
     icon: React.createElement(LuGraduationCap),
-    date: "2020",
+    date: "2024 (4 month)",
   }
  
  
