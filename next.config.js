@@ -8,11 +8,9 @@ const nextConfig = {
         },
       ],
     },
+    serverExternalPackages: ['@react-email/render', '@react-email/tailwind'],
     experimental: {
-      serverActions: true,
-      serverComponentsExternalPackages: ['@react-email/render', '@react-email/tailwind']
-
-
+      serverActions: {},
     },
   };
   
