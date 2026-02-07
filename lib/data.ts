@@ -50,15 +50,23 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full-stack developer coop",
+    title: "Full-stack developer internship",
     location: "Mississauga, ON",
     description:
-      "Technologies: C#, .NET, Bootstrap, Typescript, Nextjs, Azure",
+      "Technologies: C#, Typescript,.NET,  Angular, Azure, Expo, React Native",
+    icon: React.createElement(LuGraduationCap),
+    date: "2026 (4 month)",
+  },
+  {
+    title: "Full-stack developer internship",
+    location: "Mississauga, ON",
+    description:
+      "Technologies: C#, .NET, Typescript, Nextjs, Azure",
     icon: React.createElement(LuGraduationCap),
     date: "2025 (4 month)",
   },
   {
-    title: "Full-stack developer coop",
+    title: "Full-stack developer internship",
     location: "Mississauga, ON",
     description:
       "Technologies: C#, .NET, Bootstrap, Typescript, Nextjs, Azure",
@@ -121,19 +129,12 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "Java",
+  "C#",
   "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
+  ".Net",
+  "Angular",
+  "React Native",
+  "Expo",
+  "git",
   "SpringBoot",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Framer Motion",
 ] as const;

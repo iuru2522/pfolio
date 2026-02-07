@@ -37,7 +37,21 @@ html,dark {
 }
 .borderBlack {
   @apply border border-black/10;
-} 
+}
+
+/* Timeline date margin fix */
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  margin-left: 20px !important;
+  float: none !important;
+  display: inline-block !important;
+}
+
+/* Move only '2025 (4 month)' to the left */
+.vertical-timeline-element-content .vertical-timeline-element-date.special-2025-date {
+  margin-right: 20px !important;
+  float: none !important;
+  display: inline-block !important;
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

@@ -37,6 +37,7 @@ export default function Experience() {
                 borderRight: theme === "light" ? "0.4rem solid #9ca3af" : "0.4rem solid rgba(255, 255, 255, 0.05)",
               }}
               date={item.date}
+              dateClassName={item.date === "2025 (4 month)" ? "special-2025-date" : undefined}
               icon={item.icon}
               iconStyle={{
                 background: theme === "light" ? "white" : "rgba(255,255,255, 0.15)",
