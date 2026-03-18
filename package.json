@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-email/components": "^1.0.8",
+    "@react-email/components": "^1.0.10",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "25.5.0",
     "@types/react": "19.2.14",
@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "wrangler": "^4.74.0"
+    "wrangler": "^4.75.0"
   }
 }
