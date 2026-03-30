@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "wrangler": "^4.76.0"
+    "wrangler": "^4.78.0"
   }
 }
