@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import acmeImg from "@/public/acme.png";
 import utrackerImg from "@/public/utracker.png";
-import angularImg from "@/public/angular.png";
+import angularImg from "@/public/bug_tracker.png";
 import javaImg from "@/public/java.jpg";
 import zettelkastenImg from "@/public/zettelkasten.jpg";
 

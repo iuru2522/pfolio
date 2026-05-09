@@ -60,7 +60,7 @@ export default function Project({
             </a>
             {title === "angular-firebase-playground" && (
               <a
-                href="https://angular-firebase-playground.pages.dev/"
+                href="https://angular-firebase-playground.vercel.app/"
                 className="text-green-500 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
