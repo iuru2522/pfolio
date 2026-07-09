@@ -120,7 +120,7 @@ export const projectsData = [
     title: "angular-firebase-playground",
     description:
       "Bug tracking app",
-    tags: [ "In progress", "Typescript", "Angular 19", "Firebase", "SSR"],
+    tags: [ "In progress", "Typescript", "Angular 20", "Firebase", "SSR"],
     imageUrl: angularImg,
     githubLink: githubLink5
     
