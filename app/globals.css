@@ -1,78 +1,232 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
-
-@theme {
-  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
-  --background-image-gradient-conic: conic-gradient(
-    from 180deg at 50% 50%,
-    var(--tw-gradient-stops)
-  );
+:root,
+html[data-theme="matrix-grid"] {
+  --deck-bg: #000000;
+  --deck-bg-elevated: #050805;
+  --deck-fg: #00ff66;
+  --deck-accent: #00e5ff;
+  --deck-warn: #ff007f;
+  --deck-amber: #ffbf00;
+  --deck-muted: #1a3d28;
+  --deck-border: #00ff66;
+  --deck-panel: #020402;
+  --deck-invert-fg: #000000;
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
+html[data-theme="night-city"] {
+  --deck-bg: #1a1418;
+  --deck-bg-elevated: #241c22;
+  --deck-fg: #ff007f;
+  --deck-accent: #ffbf00;
+  --deck-warn: #00e5ff;
+  --deck-amber: #ffbf00;
+  --deck-muted: #4a2035;
+  --deck-border: #ff007f;
+  --deck-panel: #120e11;
+  --deck-invert-fg: #1a1418;
+}
 
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
+@theme inline {
+  --color-deck-bg: var(--deck-bg);
+  --color-deck-bg-elevated: var(--deck-bg-elevated);
+  --color-deck-fg: var(--deck-fg);
+  --color-deck-accent: var(--deck-accent);
+  --color-deck-warn: var(--deck-warn);
+  --color-deck-amber: var(--deck-amber);
+  --color-deck-muted: var(--deck-muted);
+  --color-deck-border: var(--deck-border);
+  --color-deck-panel: var(--deck-panel);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
 }
 
 html {
-  --line-color: #e5e7eb;
-}
-
-html,dark {
-  --line-color: rgba(255,255,255, 0.2)
-}
-.borderBlack {
-  @apply border border-black/10;
-}
-
-/* Timeline date margin fix */
-.vertical-timeline-element-content .vertical-timeline-element-date {
-  margin-left: 20px !important;
-  float: none !important;
-  display: inline-block !important;
-}
-
-/* Move only '2025 (4 month)' to the left */
-.vertical-timeline-element-content .vertical-timeline-element-date.special-2025-date {
-  margin-right: 20px !important;
-  float: none !important;
-  display: inline-block !important;
-}
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  scroll-behavior: smooth;
+  background: var(--deck-bg);
+  color: var(--deck-fg);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+  min-height: 100vh;
+  background: var(--deck-bg);
+  color: var(--deck-fg);
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background: var(--deck-accent);
+  color: var(--deck-invert-fg);
+}
+
+a {
+  color: inherit;
+}
+
+.deck-grid-bg {
+  background-color: var(--deck-bg);
+  background-image:
+    linear-gradient(var(--deck-muted) 1px, transparent 1px),
+    linear-gradient(90deg, var(--deck-muted) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: -1px -1px;
+}
+
+.deck-scanlines::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 2px,
+    rgb(0 0 0 / 0.12) 3px
+  );
+  opacity: 0.35;
+}
+
+.deck-panel {
+  background: var(--deck-panel);
+  border: 1px solid var(--deck-border);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--deck-accent) 25%, transparent);
+}
+
+.deck-panel-pulse {
+  animation: border-pulse 2.8s ease-in-out infinite;
+}
+
+.deck-glitch:hover,
+.deck-glitch:focus-visible {
+  animation: glitch-shift 180ms steps(2, end) 1;
+  text-shadow:
+    -1px 0 var(--deck-warn),
+    1px 0 var(--deck-accent);
+}
+
+.deck-btn {
+  border: 1px solid var(--deck-border);
+  background: transparent;
+  color: var(--deck-fg);
+  font: inherit;
+  padding: 0.5rem 0.85rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.deck-btn:hover,
+.deck-btn:focus-visible {
+  background: var(--deck-fg);
+  color: var(--deck-invert-fg);
+  outline: none;
+}
+
+.deck-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.deck-input {
+  width: 100%;
+  border: 1px solid var(--deck-border);
+  background: var(--deck-bg);
+  color: var(--deck-fg);
+  font: inherit;
+  padding: 0.55rem 0.7rem;
+}
+
+.deck-input:focus {
+  outline: 1px solid var(--deck-accent);
+  outline-offset: 0;
+}
+
+.deck-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--deck-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.deck-section {
+  scroll-margin-top: 5.5rem;
+  padding: 1.25rem 0 2rem;
+}
+
+.deck-heading {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--deck-accent);
+}
+
+@keyframes border-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--deck-accent) 15%, transparent);
+    border-color: var(--deck-border);
+  }
+  50% {
+    box-shadow: 0 0 8px 1px color-mix(in srgb, var(--deck-accent) 45%, transparent);
+    border-color: var(--deck-accent);
+  }
+}
+
+@keyframes glitch-shift {
+  0% {
+    transform: translate(0);
+  }
+  30% {
+    transform: translate(-1px, 0.5px);
+  }
+  60% {
+    transform: translate(1px, -0.5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes boot-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.boot-cursor::after {
+  content: "█";
+  margin-left: 0.15rem;
+  animation: boot-blink 1s step-end infinite;
+  color: var(--deck-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .deck-panel-pulse,
+  .deck-glitch:hover,
+  .deck-glitch:focus-visible,
+  .boot-cursor::after {
+    animation: none !important;
+  }
+
+  .deck-scanlines::after {
+    display: none;
+  }
+}

@@ -1,25 +1,16 @@
-// import Image from 'next/image'
-
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
-import Blog from "@/components/blog";
+import { DeckShell } from "@/components/deck/DeckShell";
+import { ConnectSection } from "@/components/sections/ConnectSection";
+import { ArchivesSection } from "@/components/sections/ArchivesSection";
+import { ProtocolsSection } from "@/components/sections/ProtocolsSection";
+import { SignalSection } from "@/components/sections/SignalSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro/>
-      <SectionDivider/>
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Experience/>
-      <Blog/>
-      <Contact/>
-    </main>
-  )
+    <DeckShell>
+      <ConnectSection />
+      <ArchivesSection />
+      <ProtocolsSection />
+      <SignalSection />
+    </DeckShell>
+  );
 }
