@@ -26,7 +26,7 @@
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.3.2",
     "@types/node": "^26.1.1",
-    "@types/react": "^19",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.0.4",
     "eslint": "^10",
@@ -34,8 +34,8 @@
     "jsdom": "^29.1.1",
     "prettier": "^3.9.6",
     "tailwindcss": "^4",
-    "typescript": "^7",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "typescript": "~6.0.3"
   },
   "description": "Neuromancer-inspired cyberdeck portfolio"
 }
