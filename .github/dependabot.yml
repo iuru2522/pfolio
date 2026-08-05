@@ -6,12 +6,15 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/" # Location of package manifests
+    directory: "/"
     schedule:
       interval: "weekly"
+
     groups:
       all-updates:
         applies-to: version-updates
         patterns:
           - "*"
-          
+
+    ignore:
+      - dependency-name: "typescript"
