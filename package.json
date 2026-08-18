@@ -1,7 +1,8 @@
 {
   "name": "pfolio",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -37,5 +38,8 @@
     "vitest": "^4.1.10",
     "typescript": "~6.0.3"
   },
-  "description": "Neuromancer-inspired cyberdeck portfolio"
+  "description": "Neuromancer-inspired cyberdeck portfolio",
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp", "unrs-resolver"]
+  }
 }

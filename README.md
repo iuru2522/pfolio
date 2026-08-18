@@ -12,9 +12,9 @@ Neuromancer-inspired single-page portfolio for a junior developer — CRT cyberd
 ## Setup
 
 ```bash
-npm install
+pnpm install
 cp .env.example .env.local   # optional mail provider keys
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
@@ -23,12 +23,12 @@ Open [http://localhost:3000](http://localhost:3000).
 
 | Command | Purpose |
 |---------|---------|
-| `npm run dev` | Local deck |
-| `npm run build` / `npm start` | Production |
-| `npm run lint` | ESLint |
-| `npm run typecheck` | TypeScript |
-| `npm run test` | Vitest unit tests |
-| `npm run test:e2e` | Playwright e2e |
+| `pnpm dev` | Local deck |
+| `pnpm build` / `pnpm start` | Production |
+| `pnpm lint` | ESLint |
+| `pnpm typecheck` | TypeScript |
+| `pnpm test` | Vitest unit tests |
+| `pnpm test:e2e` | Playwright e2e |
 
 ## Edit content
 

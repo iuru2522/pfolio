@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2026-08-18
+
+### Changed
+- Switched the package manager from npm to pnpm 10.15.0 (Corepack `packageManager` pin, `pnpm-lock.yaml`)
+- Updated README scripts and Playwright web server to use pnpm
+- Allowed pnpm install scripts for `sharp` and `unrs-resolver`
+
 ## [2.0.0] - 2026-07-15
 
 ### Added
@@ -76,6 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Contact form with server actions and email
 - Toast notifications and Footer
 
+[2.0.1]: https://github.com/iuru2522/pfolio/releases/tag/v2.0.1
 [2.0.0]: https://github.com/iuru2522/pfolio/releases/tag/v2.0.0
 [1.7.1]: https://github.com/iuru2522/pfolio/releases/tag/v1.7.1
 [1.7.0]: https://github.com/iuru2522/pfolio/releases/tag/v1.7.0
