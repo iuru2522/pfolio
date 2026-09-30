@@ -18,3 +18,5 @@ updates:
 
     ignore:
       - dependency-name: "typescript"
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
