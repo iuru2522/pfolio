@@ -46,7 +46,3 @@ Deck Override toggles **Matrix Grid** / **Night City**. Preference is stored in 
 ## Contact uplink
 
 Without `RESEND_API_KEY` + `SIGNAL_FROM_EMAIL`, `/SIGNAL` returns a delivery failure and mailto fallback from `content/profile.ts`.
-
-## Spec Kit docs
-
-See `specs/001-cyberdeck-portfolio/quickstart.md` for full validation scenarios.
